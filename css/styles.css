@@ -1,0 +1,310 @@
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_layout.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, ../scss/_layout.scss */
+html {
+  font-size: 22px;
+}
+
+/* line 8, ../scss/_layout.scss */
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Roboto", sans-serif, "Helvetica", sans-serif;
+  box-sizing: border-box;
+}
+
+/* line 14, ../scss/_layout.scss */
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+/* line 20, ../scss/_layout.scss */
+.h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 24, ../scss/_layout.scss */
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* line 28, ../scss/_layout.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 33, ../scss/_layout.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 36, ../scss/_layout.scss */
+.clearfix {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* line 41, ../scss/_layout.scss */
+.row {
+  width: 100%;
+}
+/* line 43, ../scss/_layout.scss */
+.row [class*='col-'] {
+  padding-right: 1.5rem;
+}
+/* line 45, ../scss/_layout.scss */
+.row [class*='col-']:last-child {
+  padding-right: 0;
+}
+
+/* line 51, ../scss/_layout.scss */
+.col-lg-4 {
+  float: left;
+  width: 33.3333%;
+}
+
+/* line 56, ../scss/_layout.scss */
+.col-lg-8 {
+  float: left;
+  width: 66.666%;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 62, ../scss/_layout.scss */
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 720px) {
+  /* line 70, ../scss/_layout.scss */
+  .col-sm-1 {
+    float: none;
+    width: 100%;
+    padding: 0 !important;
+  }
+}
+/* line 78, ../scss/_layout.scss */
+.verticalAlignSuper {
+  vertical-align: super;
+}
+
+/* line 2, ../scss/_content.scss */
+.pageContainer {
+  background-color: #fefefe;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/* line 7, ../scss/_content.scss */
+.pageContainer .pageContent {
+  position: relative;
+  max-width: 1748px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1800px) {
+  /* line 7, ../scss/_content.scss */
+  .pageContainer .pageContent {
+    margin: 0 1.5rem;
+  }
+}
+
+/* line 17, ../scss/_content.scss */
+.imageContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+/* line 22, ../scss/_content.scss */
+.imageContainer .imageContent {
+  position: absolute;
+  max-width: 22rem;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/jack-ma-color.png") bottom center no-repeat;
+  background-size: 100%;
+}
+@media screen and (max-width: 720px) {
+  /* line 22, ../scss/_content.scss */
+  .imageContainer .imageContent {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: 583px;
+  }
+}
+
+/* line 41, ../scss/_content.scss */
+.mainContentainer {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+/* line 45, ../scss/_content.scss */
+.mainContentainer .mainContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 4.5rem;
+  overflow-y: auto;
+}
+/* line 53, ../scss/_content.scss */
+.mainContentainer .scrollDownButtonContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -moz-transform: translate-x("0, -50%");
+  -ms-transform: translate-x("0, -50%");
+  -webkit-transform: translate-x("0, -50%");
+  transform: translate-x("0, -50%");
+  text-align: center;
+}
+
+/* line 63, ../scss/_content.scss */
+.biographySection {
+  top: 0;
+  right: 0;
+  bottom: 4.5rem;
+  overflow-y: auto;
+}
+/* line 69, ../scss/_content.scss */
+.biographySection .pageHeader {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+/* line 73, ../scss/_content.scss */
+.biographySection .pageHeader .header {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  color: #212121;
+}
+/* line 79, ../scss/_content.scss */
+.biographySection .biographyList {
+  font-weight: 300;
+  list-style-type: disc;
+  list-style-position: outside;
+  -webkit-margin-start: -10px;
+  margin-left: 1.5rem;
+}
+/* line 86, ../scss/_content.scss */
+.biographySection .biographyList .biographyLi {
+  max-width: 960px;
+  padding-bottom: 0.75rem;
+}
+@media screen and (max-width: 960px) {
+  /* line 86, ../scss/_content.scss */
+  .biographySection .biographyList .biographyLi {
+    font-size: 19px;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* line 98, ../scss/_content.scss */
+.quoteSection {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+/* line 102, ../scss/_content.scss */
+.quoteSection .quoteContainer {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  overflow: hidden;
+}
+/* line 108, ../scss/_content.scss */
+.quoteSection .quoteContainer .quoteContent {
+  max-width: 960px;
+}
+/* line 110, ../scss/_content.scss */
+.quoteSection .quoteContainer .quoteContent .quote {
+  color: #7a7a7a;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}

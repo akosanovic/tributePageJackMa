@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  font-size: 22px;
+
+}
+body{
+	font-size:$fs;
+	line-height:$lh;
+	font-family: $ff-roboto, 'Helvetica', sans-serif; //300,300i,400,700
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,p{
+  padding:0;
+  margin:0;
+  font-family: $ff-playfair;
+}
+
+.h1{
+  margin:0;
+  padding:0;
+}
+p{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+.row {
+  width: 100%;
+  [class*='col-'] {
+    padding-right: $lh;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.col-lg-4 {
+  float: left;
+  width: 33.3333%;
+
+}
+.col-lg-8 {
+  float: left;
+  width: 66.666%;
+}
+// medium columns 
+@media screen and(max-width: 1200px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .col-sm-1 {
+    float: none;
+    width: 100%;
+    padding: 0 !important;
+  }
+}
+
+// Helper classes
+.verticalAlignSuper {
+  vertical-align: super;
+}
